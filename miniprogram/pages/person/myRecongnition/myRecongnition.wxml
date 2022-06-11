@@ -1,0 +1,66 @@
+<view class="title">实名认证</view>
+<view class="view-top">
+  <text style="font-size:30rpx; font-weight: 300; color: #333333;margin-top: 12%;margin-left: -32rpx;"> 真实姓名</text>
+  <image src="/static/images/greenLine.png" style="width: 50rpx;height: 70rpx; margin-top: 60rpx; float: left; margin-left: 3.5%;"></image>
+  <input  class="inp" placeholder="请输入您的真实姓名" bindinput="getName"   value="{{list.Name}}"> </input>
+  <view class="divLine"></view>
+</view>
+
+<view class="view-top">
+  <text style="font-size:30rpx; font-weight: 300; color: #333333;margin-top: 12%;margin-left: -32rpx;">身份证号</text>
+  <image src="/static/images/greenLine.png" style="width: 50rpx;height: 70rpx; margin-top: 60rpx; float: left; margin-left: 3.5%;"></image>
+  <input  class="inp" placeholder="请输入您的身份证号" bindinput="getNum"   value="{{list.Number}}"> </input>
+  <view class="divLine"></view>
+</view>
+
+
+<view class="view-top">
+  <text style="font-size:30rpx; font-weight: 300; color: #333333;margin-top: 11%;margin-left: -32rpx;">性别</text>
+  <image src="/static/images/greenLine.png" style="width: 50rpx;height: 70rpx; margin-top: 60rpx; float: left; margin-left: 3.5%;"></image>
+  <view class="divLine" style="position: relative;top: 73rpx;"></view>
+  <picker bindchange="bindPickerChange"  value="{{index}}" range="{{array}}">
+   <!--认证前-->
+      <view class="picker-box" wx:if="{{!idloggin}}">
+          {{array[index]}}
+      <image bindtap="bindPickerChange" class="icon" src="/static/images/jt-down.png"></image>
+    </view>
+    <!--认证后-->
+    <view class="picker-box" wx:else>
+          {{list.Sex}}
+      <image bindtap="bindPickerChange" class="icon" src="/static/images/jt-down.png"></image>
+    </view>
+
+    </picker>
+  
+</view>
+
+
+<view class="view-top">
+  <text style="font-size:30rpx; font-weight: 300; color: #333333;margin-top: 12%;margin-left: -32rpx;">昵称</text>
+  <image src="/static/images/greenLine.png" style="width: 50rpx;height: 70rpx; margin-top: 60rpx; float: left; margin-left: 3.5%;"></image>
+  <input  class="inp" placeholder="请输入您的昵称" bindinput="getPname"   value="{{list.Pname}}"> </input>
+  <view class="divLine"></view>
+</view>
+
+<view class="view-top">
+  <text style="font-size:30rpx; font-weight: 300; color: #333333;margin-top: 12%;margin-left: -32rpx;">手机号</text>
+  <image src="/static/images/greenLine.png" style="width: 50rpx;height: 70rpx; margin-top: 60rpx; float: left; margin-left: 3.5%;"></image>
+  <input  class="inp" placeholder="请输入您的手机号" bindinput="getTele"   value="{{list.Telephone}}"> </input>
+  <view class="divLine"></view>
+</view>
+
+<view class="view-top">
+  <text style="font-size:30rpx; font-weight: 300; color: #333333;margin-top: 12%;margin-left: -32rpx;">行业</text>
+  <image src="/static/images/greenLine.png" style="width: 50rpx;height: 70rpx; margin-top: 60rpx; float: left; margin-left: 3.5%;"></image>
+  <input  class="inp" placeholder="请输入您的行业" bindinput="getCareer"   value="{{list.Career}}"> </input>
+  <view class="divLine"></view>
+</view>
+
+<view class="view-top">
+  <text style="font-size:30rpx; font-weight: 300; color: #333333;margin-top: 12%;margin-left: -32rpx;">邮箱</text>
+  <image src="/static/images/greenLine.png" style="width: 50rpx;height: 70rpx; margin-top: 60rpx; float: left; margin-left: 3.5%;"></image>
+  <input  class="inp" placeholder="请输入您的邮箱号" bindinput="getMail"  value="{{list.Mail}}"> </input>
+  <view class="divLine"></view>
+</view>
+
+<view class="goBtn" bindtap="addUserMessage" data-pagename="commuInfo"  data-gostate="rt">确定</view>

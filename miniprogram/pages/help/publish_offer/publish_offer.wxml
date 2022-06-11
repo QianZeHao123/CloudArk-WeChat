@@ -1,0 +1,68 @@
+<!--pages/help/publish_offer/publish_offer.wxml-->
+<view class="total">
+  <!-- 上方标题栏-->
+  <view class="top">
+    <view class="first"> 我要求助</view>
+    <view class="second"> 提供帮助</view>
+    <view style="height: 8rpx;width: 60rpx;background-color: #044E99;position: absolute;top: 128rpx;left: 520rpx;"></view>
+  </view>
+<!--避难场所位置-->
+  <view class="position">
+    <text style="font-size: 32rpx;margin-left: 40rpx;font-weight: 600;"> 避难场所位置</text>
+    <view >
+       <image src="/static/images/getposition.png" style="width: 35rpx;height: 35rpx;position: absolute;top: 188rpx;left: 460rpx;"></image>
+       <view class="position-use" bindtap="getLocation">使用当前位置</view>
+    </view>
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" 
+      custom-item="{{customItem}}" wx:if="{{addresstype==1}}">
+      <view class="position-choose">
+         <view style="color: #888787;font-size: 29rpx;margin-left: 30rpx;" wx:if="{{! ischooseposition}}">
+            选择所在位置 
+         </view>
+         <view style="color: #888787;font-size: 33rpx;margin-left: 550rpx;margin-top: -82rpx;" wx:if="{{! ischooseposition}}">
+             >
+         </view>
+         <view  style="color: #888787;font-size: 33rpx;margin-left: 30rpx;"  wx:else="{{! ischooseposition}}">
+            {{region[0]}}{{region[1]}}{{region[2]}}
+         </view>
+      </view>
+      </picker>
+       <!--使用当前位置回显-->
+       <view class="position-choose" wx:if="{{addresstype==2}}">
+         <input style="color: #2b2020;font-size: 29rpx;margin-left: 30rpx;margin-top: 20rpx;" value="{{address}}">       
+         </input>
+      </view>
+  </view>
+
+<!--联系电话-->
+  <view class="position">
+    <text style="font-size: 32rpx;margin-left: 40rpx;font-weight: 600;"> 联系电话</text>
+    <view >
+       <view class="phone-use" bindtap="getWXTele">使用微信手机号</view>
+    </view>
+      <view class="position-choose">
+         <input style="color: #291f1f;font-size: 29rpx;margin-left: 30rpx;margin-top: 20rpx;" placeholder="请输入手机号码 " bindblur="getOfferTele" value="{{wxtelephone}}">       
+         </input>
+      </view>
+  </view>
+
+<!--可提供的帮助说明-->
+<view class="position">
+    <text style="font-size: 32rpx;margin-left: 40rpx;font-weight: 600;"> 可提供的帮助说明</text>
+      <view class="help-choose">
+         <textarea  style="width: 580rpx; color: #291f1f;font-size: 29rpx;margin-left: 30rpx;margin-top: 20rpx;"  placeholder=" 请简要描述避难场所的情况或能提供的帮助，例如饮用水、食物、住宿等 " bindinput="getOfferMessage" value="" maxlength="100">       
+         </textarea>
+      </view>
+  </view>
+
+<text class="down-first"> 关乎生命安危，请确保真实性</text>
+<view class="goBtn" bindtap="submit" data-pagename="commuInfo"  data-gostate="rt">提交</view>
+
+
+<view class="down-regulation">
+  <checkbox style="margin-top: 50rpx;margin-left: 10%;width: 15rpx;height: 15rpx;" checked="true"/>
+  <text style="font-size: 29rpx;margin-left: 60rpx;">我已阅读并同意</text>
+  <text style="font-size: 29rpx;margin-left: 10rpx;color: #044E99;">《隐私政策与免责声明》</text>
+</view>
+</view>
+

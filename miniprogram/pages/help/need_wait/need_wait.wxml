@@ -1,0 +1,10 @@
+
+<map style="width: 700rpx;height: 1400rpx;margin-left: 25rpx;margin-top: 15rpx;" latitude="{{makers[0].latitude}}" longitude="{{makers[0].longitude}}" markers="{{makers}}"></map>
+<!--立即求助-->
+<view wx:if="{{!waiting}}" style="width: 220rpx;height: 220rpx;position: fixed;bottom: 120rpx;left: 35%; background-color: #cc3333;border-radius: 50%;line-height: 220rpx; "bindtap="sendneed">
+    <text style="font-size: 40rpx;color: white; margin-left: 30rpx;">立即呼救</text>
+</view>
+<!--等待救援-->
+<view wx:if="{{waiting}}" style="width: 220rpx;height: 220rpx;position: fixed;bottom: 120rpx;left: 35%; background-color: #cc3333;border-radius: 50%;line-height: 220rpx; ">
+    <text style="font-size: 40rpx;color: white; margin-left: 30rpx;">等待救援</text>
+</view>

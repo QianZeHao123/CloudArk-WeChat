@@ -1,0 +1,127 @@
+<!--pages/help/publish_need/publish_need.wxml-->
+<view class="total">
+  <!-- 上方标题栏-->
+  <view class="top">
+    <view class="first"> 我要求助</view>
+    <view class="second"> 提供帮助</view>
+    <view style="height: 8rpx;width: 60rpx;background-color: #044E99;position: absolute;top: 124rpx;left: 190rpx;"></view>
+  </view>
+
+    <!--上报所在位置-->
+  <view class="position">
+    <text style="font-size: 32rpx;margin-left: 40rpx;font-weight: 600;"> 上报所在位置</text>
+    <view >
+       <image src="/static/images/getposition.png" style="width: 35rpx;height: 35rpx;position: absolute;top: 188rpx;left: 460rpx;"></image>
+       <view class="position-use" bindtap="getLocation">使用当前位置</view>
+    </view>
+    <!--选择器框-->
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" 
+      custom-item="{{customItem}}" wx:if="{{addresstype==1}}">
+      <view class="position-choose">
+         <view style="color: #888787;font-size: 29rpx;margin-left: 30rpx;" wx:if="{{! ischooseposition}}">
+            选择所在位置 
+         </view>
+         <view style="color: #888787;font-size: 33rpx;margin-left: 550rpx;margin-top: -82rpx;" wx:if="{{! ischooseposition}}">
+             >
+         </view>
+         <view  style="color: #888787;font-size: 33rpx;margin-left: 30rpx;"  wx:else="{{! ischooseposition}}">
+            {{region[0]}}{{region[1]}}{{region[2]}}
+         </view>
+      </view>
+      </picker>
+
+    <!--使用当前位置回显-->
+      <view class="position-choose" wx:if="{{addresstype==2}}">
+         <input style="color: #2b2020;font-size: 29rpx;margin-left: 30rpx;margin-top: 20rpx;" value="{{address}}">       
+         </input>
+      </view>
+  </view>
+
+<!--求救人手机号码-->
+  <view class="position">
+    <text style="font-size: 32rpx;margin-left: 40rpx;font-weight: 600;">求救人手机号码</text>
+    <view >
+       <view class="phone-use" bindtap="getWXTele">使用微信手机号</view>
+    </view>
+      <view class="position-choose">
+         <input style="color: #2b2020;font-size: 29rpx;margin-left: 30rpx;margin-top: 20rpx;" placeholder="请输入手机号码 " bindblur="getNeedTele" value="{{wxtelephone}}">       
+         </input>
+      </view>
+  </view>
+
+<!--现场情况描述-->
+  <view class="position">
+    <text style="font-size: 32rpx;margin-left: 40rpx;font-weight: 600;"> 现场情况描述</text>
+    <text style="font-size: 29rpx;margin-left: 35rpx;margin-top: -30rpx;">语音求救/文字求救</text>
+      <view class="help-choose">
+        <!--文字输入-->
+         <textarea wx:if="{{choose==1}}" style="width: 580rpx;height: 140rpx; color: #241a1a;font-size: 29rpx;margin-left: 30rpx;margin-top: 20rpx;"  placeholder=" 请简要描述现场情况，如人数 " bindinput="getNeedMessage" 
+         value="{{textMessage}}" maxlength="70">       
+         </textarea>
+        <!--按住进行语音输入-->
+        <view wx:if="{{choose==2}}" >
+          <block wx:for="{{list}}" wx:if="{{index<2}}" wx:key="index" style="height: 30rpx;">
+            <image src="/static/images/video.png" style="width: 50rpx;height: 45rpx;margin-left: 50rpx;" bindtap=""></image>
+            <view bindtap="audioPlay" bindlongtap="deleteVoice" data-src="{{item.src}}" class='myLuYin' class="audio">录音{{index+1}}(点击播放，长按删除)</view>
+          </block>
+        </view>
+      </view>
+      <view class="help-next">
+        <view class="textmessage{{textcssid}}" bindtap="choosetextMessage">
+            <image src="/static/images/textmessage.png" style="width: 60rpx;height: 60rpx;margin-top: 15rpx;margin-left: 10rpx;"> </image>
+          </view>
+          <view class="videomessage{{videocssid}}" bindtap="choosevideoMessage">
+          <image src="/static/images/videomessage.png" style="width: 50rpx;height: 50rpx;margin-top: 20rpx;margin-left: 20rpx;"  > </image>
+          </view>
+          <button  wx:if="{{choose==2}}" class="{{luStatu?'btTouch':'bt'}}"   style="margin-top:100rpx;width: 320rpx; "  bind:touchstart="touchStart"bind:touchend="touchEnd"  type='primary'>
+             <text wx:if="{{luStatu}}">松开结束</text> <text wx:else>按住说话</text>
+         </button> 
+          <image class="send" src="/static/images/add.png" style="width: 50rpx;height: 50rpx;position: absolute;top: 755rpx;margin-left: 550rpx;" bindtap="sendPicture"></image>  
+      </view>
+        <!-- 快捷文字输入-->
+          <view  wx:if="{{choose==1}}">
+             <text style="font-size: 30rpx;color:#797979;margin-left: 50rpx;margin-top: 50rpx;">添加求救常用语</text>
+             <view class="kuaijie-first">
+                <view class="kuaijie-first-text" data-hi="有老人" bindtap="textMessageAdd" >有老人</view>
+                <view  class="kuaijie-first-text" data-hi="有小孩"  bindtap="textMessageAdd">有小孩</view>
+                <view  class="kuaijie-first-text" data-hi="有孕妇"  bindtap="textMessageAdd">有孕妇</view>
+                <view  class="kuaijie-first-text" data-hi="有残疾人"  bindtap="textMessageAdd">有残疾人</view>
+            </view>
+            <view class="kuaijie-second">
+                <view class="kuaijie-first-text" data-hi="较多人"  bindtap="textMessageAdd">较多人</view>
+                <view  class="kuaijie-second-text" data-hi="走失"  bindtap="textMessageAdd">走失</view>
+                <view  class="kuaijie-second-text" data-hi="断联"   bindtap="textMessageAdd">断联</view>
+                <view  class="kuaijie-second-text" data-hi="缺水"  bindtap="textMessageAdd">缺水</view>
+            </view>
+            <view class="kuaijie-third">
+                <view class="kuaijie-first-text" data-hi="缺食物"  bindtap="textMessageAdd">缺食物</view>
+                <view  class="kuaijie-second-text" data-hi="缺电"  bindtap="textMessageAdd">缺电</view>
+                <view  class="kuaijie-first-text" data-hi="需铲车"  bindtap="textMessageAdd">需铲车</view>
+                <view  class="kuaijie-first-text" data-hi="需皮艇"  bindtap="textMessageAdd">需皮艇</view>
+            </view>
+            <view class="kuaijie-fourth">
+                <view class="kuaijie-first-text"data-hi="需排污"   bindtap="textMessageAdd">需排污</view>
+                <view  class="kuaijie-first-text"data-hi="需拖车"   bindtap="textMessageAdd">需拖车</view>
+                <view  class="kuaijie-first-text"data-hi="需药物"   bindtap="textMessageAdd">需药物</view>
+            </view>
+          </view>
+          <!--图片、文件、成员列表-弹窗-->
+     <view class="tools" wx:if="{{numberDataShow==true}}" style="background-color: white;width: 650rpx;height: 350rpx;z-index: 9999;position: relative;">
+           <view  class="msg" > 
+            <image class="img1" src="/static/images/court-image.png"  bindtap="chooseImg"></image>
+            <image class="img2" src="/static/images/court-file.png"  bindtap="chooseFile"></image>
+          </view>
+    </view>
+  </view>
+       
+  <text class="down-first"> 关乎生命安危，请确保真实性</text>
+  <view class="goBtn" bindtap="submit" data-pagename="commuInfo"  data-gostate="rt">提交</view>
+  
+  <view class="down-regulation">
+  <checkbox style="margin-top: 20rpx;margin-left: 10%;width: 15rpx;height: 15rpx;" checked="true"/>
+  <text style="font-size: 29rpx;margin-left: 60rpx;">我已阅读并同意</text>
+  <text style="font-size: 29rpx;margin-left: 10rpx;color: #044E99;">《隐私政策与免责声明》</text>
+  </view>
+ 
+</view>
+

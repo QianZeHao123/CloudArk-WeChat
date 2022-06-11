@@ -1,0 +1,20 @@
+<!--pages/identifi/identifi.wxml-->
+<view class="view-top">
+  <text style="font-size:30rpx; font-weight: 300; color: #333333;margin-top: 12%;margin-left: -32rpx;"> 救援队/救援组织名称</text>
+  <image src="/static/images/greenLine.png" style="width: 50rpx;height: 70rpx; margin-top: 70rpx; float: left; margin-left: 3.5%;"></image>
+  <input  class="inp" placeholder="请输入" bindinput="getRescueName" value="{{list.rescue_name}}"> </input>
+  <view class="divLine"></view>
+</view>
+
+<view class="view-top">
+  <text style="font-size:30rpx; font-weight: 300; color: #333333;margin-top: 12%;margin-left: -32rpx;"> 备案号</text>
+  <image src="/static/images/greenLine.png" style="width: 50rpx;height: 70rpx; margin-top: 70rpx; float: left; margin-left: 3.5%;"></image>
+  <input  class="inp" placeholder="请输入" bindinput="getRescueNum"  value="{{list.rescue_num}}"> </input>
+  <view class="divLine"></view>
+</view>
+
+<text style="font-size:30rpx; font-weight: 300; color: #333333;margin-top: 9%;margin-left: 6%;"> 上传执照图片或证明信息</text>
+<image  src="/static/images/addPicture.png" style="width: 260rpx;height: 260rpx;margin-left: 40rpx;" bindtap="chooseImg">
+</image>
+
+<view class="goBtn" bindtap="addRescueMessage" data-pagename="commuInfo"  data-gostate="rt">确定</view>

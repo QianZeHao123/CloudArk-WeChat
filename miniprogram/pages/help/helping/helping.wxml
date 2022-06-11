@@ -1,0 +1,52 @@
+<map style="width: 740rpx;height: 1400rpx;margin-left: 5rpx;margin-top: 15rpx;" latitude="{{makers[0].latitude}}" longitude="{{makers[0].longitude}}" markers="{{makers}}"></map>
+
+
+
+<view class="safe">
+  <image src="/static/images/safe.png" style="width: 55rpx;height: 55rpx;margin-left: 20rpx;margin-top: 20rpx;"></image>
+</view>
+<view class="safe-text">救援开始，安全功能持续开启</view>
+
+<!--下面框框-->
+<view class="down">
+  <view class="time">
+      <image  src="/static/images/clock.png" style="width: 35rpx;height: 35rpx;"></image>
+      <text style="font-size:32rpx;color: #666666; position: absolute;top: 33; margin-left: 25rpx;"> 牛的12312123{{}}</text>
+  </view>
+
+  <view class="Myposition">
+      <image  src="/static/images/greendot.png" style="width:110rpx;height: 110rpx;position: absolute;top: -30rpx; "></image>
+      <text style="font-size:31rpx;color: #666666; position: absolute;top: 34; margin-left: 100rpx;"> 我的位置：{{}}</text>
+  </view>
+
+  <view class="neederposition">
+      <image  src="/static/images/orangedot.png"  style="width:110rpx;height: 110rpx;position: absolute;top: -28rpx; "></image>
+      <text style="font-size:31rpx;color: #666666; position: absolute;top: 40; margin-left: 100rpx;">求助者位置：{{}}</text>
+  </view>
+  <view style="height: 1rpx;width: 710rpx;background-color: #dbdbdb;position: absolute;top: 240rpx;"></view>
+
+  <view class="down-icons">
+     <image src="/static/images/police.png" style="width: 35rpx;height: 35rpx;margin-left: 100rpx;position: absolute;top: 2rpx;"></image>
+     <text style="color: #666666;text-decoration: underline;position: absolute;top: 40rpx;left: 70rpx; " >110报警</text>
+
+     <image src="/static/images/servece.png" style="width: 40rpx;height: 40rpx;margin-left: 240rpx;"></image>
+     <text style="color: #666666;text-decoration: underline;position: absolute;top: 40rpx;left: 210rpx; " >联系客服</text>
+
+     <image src="/static/images/up.png" style="width: 28rpx;height: 28rpx;margin-left: 115rpx;position: absolute;top: 7rpx;"></image>
+     <text style="color: #666666;text-decoration: underline;position: absolute;top: 40rpx;left: 355rpx; " >交通上报</text>
+
+     <image src="/static/images/phone.png" style="width: 35rpx;height: 35rpx;margin-left: 275rpx;position: absolute;top: 1rpx;"></image>
+     <text style="color: #666666;text-decoration: underline;position: absolute;top: 40rpx;left: 505rpx; " >联系求助者</text>
+  </view>
+  <view style="height: 1rpx;width: 710rpx;background-color: #dbdbdb;position: absolute;top: 390rpx;"></view>
+ <!-- 下方按钮-->
+   <view class="button1" bindtap="">
+     <view class="button1-line">完成救助
+     </view>
+    </view>
+
+    <view class="button2" bindtap="">
+     <view class="button2-line">救助失败
+     </view>
+    </view>
+</view>

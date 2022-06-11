@@ -1,0 +1,15 @@
+<navigator class="nav" url="/pages/person/myInfo/myInfo" style="margin-top: 15rpx;">
+     <text> 个人资料</text>
+     <view class="right"> ></view>
+    </navigator>
+
+    <navigator class="nav" url="/pages/person/communi/communi">
+     <text>紧急联系人</text>
+     <view class="right"> ></view>
+    </navigator>
+
+    <navigator class="nav" url="/pages/person/myAddress/myAddress">
+     <text> 常用地址</text>
+     <view class="right"> ></view>
+    </navigator>
+

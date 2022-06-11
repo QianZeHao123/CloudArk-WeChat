@@ -1,0 +1,31 @@
+<view class="big01" >
+  <view class="big02" >
+      <!--  最左侧  -->
+      <view class="left01">
+         <view class="name01">
+        求救时间:
+         </view>
+         <view class="nature">
+          {{}}
+         </view>
+      </view>
+      <!--  中间  -->
+      <view class="center01">
+        <view class="number01">
+         救援结果：{{}}
+         </view>
+         <view class="time01">
+          救援时长： {{}}
+         </view>
+         <view class="address01">
+          位置： {{}}
+         </view>
+      </view>
+      <!--  最右侧  -->
+      <view class="right01">
+       <view class="image01">
+             >
+         </view>
+      </view>
+  </view>
+</view>

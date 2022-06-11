@@ -1,0 +1,66 @@
+<map style="width: 740rpx;height: 550rpx;margin-left: 5rpx;margin-top: 15rpx;" latitude="{{makers[0].latitude}}" longitude="{{makers[0].longitude}}" markers="{{makers}}"></map>
+
+
+
+<view class="safe">
+  <image src="/static/images/safe.png" style="width: 55rpx;height: 55rpx;margin-left: 20rpx;margin-top: 20rpx;"></image>
+</view>
+<view class="safe-text">救援开始，安全功能持续开启</view>
+
+<!--下面框框-->
+<view class="down">
+   <view style="font-size: 35rpx;font-weight: 600;padding-top: 50rpx;margin-left: 50rpx;">救援人员正努力赶来，请您耐心等待</view>
+<view class="texts">
+     <text style="font-size: 32rpx;font-weight: 500;margin-left: 50rpx;float: left;">救援人员距您 </text>
+      <text style="font-size: 32rpx;font-weight: 500;margin-left: 10rpx; color:#fd995e ;float: left;">{{}}100m</text>
+      <text style="font-size: 32rpx;font-weight: 500;margin-left: 5rpx; color:black ;float: left;">，预计</text>
+      <text style="font-size: 32rpx;font-weight: 500;margin-left: 5rpx; color:#fd995e ;float: left;">{{}}1分钟</text>
+      <text style="font-size: 32rpx;font-weight: 500;margin-left: 5rpx; color:black ;float: left;">到达。</text>
+</view>
+  
+<view style="height: 1rpx;width: 710rpx;background-color: #dbdbdb;position: absolute;top: 190rpx;"></view>
+<!--救援者信息-->
+  <view>
+  <image src="/static/images/person.png" style="width: 140rpx;height: 140rpx;border-radius: 50%;margin-top: 120rpx;margin-left: 60rpx;"></image>
+  <text style="font-size: 32rpx;position: absolute;top: 350rpx;left: 55rpx;color: #666666;">姓名：{{}}xx</text><!--只有姓-->
+ <text style="font-size: 32rpx;position: absolute;top: 250rpx;left: 280rpx;color: #666666;">联系电话：176xxxx6167</text>
+ <text style="font-size: 32rpx;position: absolute;top: 310rpx;left: 280rpx;color: #666666;">身份认证：志愿者成员</text>
+  </view>
+
+  <view style="height: 1rpx;width: 710rpx;background-color: #dbdbdb;position: absolute;top: 435rpx;"></view>
+
+  <view class="down-icons">
+     <image src="/static/images/police.png" style="width: 35rpx;height: 35rpx;margin-left: 70rpx;position: absolute;top: 2rpx;"></image>
+     <text style="color: #666666;text-decoration: underline;position: absolute;top: 40rpx;left: 40rpx; " >110报警</text>
+
+     <image src="/static/images/Message.png" style="width: 40rpx;height: 40rpx;margin-left: 185rpx;"></image>
+     <text style="color: #666666;text-decoration: underline;position: absolute;top: 40rpx;left: 170rpx; " >发消息</text>
+
+     <image src="/static/images/phone.png" style="width: 28rpx;height: 28rpx;margin-left: 80rpx;position: absolute;top: 7rpx;"></image>
+     <text style="color: #666666;text-decoration: underline;position: absolute;top: 40rpx;left: 278rpx; " >打电话</text>
+
+     <image src="/static/images/delete.png" style="width: 35rpx;height: 35rpx;margin-left: 195rpx;position: absolute;top: 1rpx;"></image>
+     <text style="color: #666666;text-decoration: underline;position: absolute;top: 40rpx;left: 390rpx; " >取消救援 </text>
+
+     <image src="/static/images/line.png" style="width: 35rpx;height: 35rpx;margin-left: 335rpx;position: absolute;top: 1rpx;"></image>
+     <text style="color: #666666;text-decoration: underline;position: absolute;top: 40rpx;left: 520rpx; " >查看路线</text>
+
+     <image src="/static/images/more.png" style="width: 55rpx;height: 55rpx;margin-left: 420rpx;position: absolute;top: 5rpx;"></image>
+  </view>
+</view>
+
+<view class="downsecond">
+ <!-- 下方按钮-->
+   <view class="button1" bindtap="">
+     <view class="button1-line">完成救助
+     </view>
+    </view>
+
+    <view class="button2" bindtap="">
+     <view class="button2-line">救助失败
+     </view>
+    </view>
+    
+    <view style="color: #5e5e5e;font-size: 29rpx;margin-left: 190rpx;margin-top: 250rpx;" bindtap="nav">若救援成功，点击这里去反馈</view>
+  </view>
+

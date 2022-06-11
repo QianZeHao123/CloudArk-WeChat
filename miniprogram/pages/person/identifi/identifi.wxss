@@ -1,0 +1,32 @@
+page{
+  width: 740rpx;
+  height:1000rpx;
+  background-color: white;
+}
+.view-top{
+  width: 730rpx;
+  height: 150rpx;
+  background-color: white;
+  padding-top: 20rpx;
+  margin-top: 30rpx;
+  margin-left: 10rpx;
+}
+
+.inp{
+  font-size: 27rpx;
+  margin-top: 4%;
+  margin-left: 6%;
+}
+
+.goBtn{width: 280rpx;line-height: 70rpx;border-radius: 40rpx;font-size: 34rpx;margin: 40rpx auto 0;text-align: center;background-color: #044E99;color: #fff; position: fixed; bottom: 200rpx; left: 50%; margin-left: -140rpx; }
+.goBtn:active{ opacity: 0.7; }
+
+.divLine{
+  background: #dbdbdb;
+  width:88%;
+  height: 0.5rpx;
+  margin-left: 6%;
+  margin-top: 5.5%;
+  
+}
+

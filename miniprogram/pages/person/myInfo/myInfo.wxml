@@ -1,0 +1,100 @@
+
+<view class="title"> 个人资料</view>
+<!--登录前-->
+<image  class="photo"  wx:if="{{!isloggin}}" src="/static/images/person.png"></image>
+<!--登录后-->
+<image  class="photo" wx:if="{{isloggin}}" src="{{userphoto}}"></image>
+
+<text style="font-size: 29rpx; font-weight: 100; color: #292828;margin-left: 7.5%;"> 基本信息</text>
+
+<navigator class="nav" url="/pages/person/myRecongnition/myRecongnition">
+   <!--未实名认证-->
+    <view wx:if="{{!idloggin}}">
+       <view class="nav-left"> 实名认证</view>
+       <text space="ensp" style="color: #666666;margin-right: -20rpx;">未认证 ></text>   
+    </view>
+  <!--已实名认证-->
+  <view wx:else>
+       <view class="nav-left"> 实名认证</view>
+       <text space="ensp" style="color: #666666;margin-right: -20rpx;" >已认证 ></text>   
+    </view>
+    <view class="divLine"></view>
+</navigator> 
+
+<!--昵称-->
+<view class="nav">
+   <!--未实名认证-->
+    <view wx:if="{{!idloggin}}">
+       <view class="nav-left"> 昵称</view>
+       <text space="ensp" style="color: #666666;">未填写 </text>   
+    </view>
+  <!--已实名认证-->
+  <view wx:else>
+       <view class="nav-left"> 昵称</view>
+       <text space="ensp" style="color: #666666;" >{{list.Pname}} </text>   
+    </view>
+    <view class="divLine"></view>
+</view> 
+
+<!--性别-->
+<view class="nav">
+   <!--未实名认证-->
+    <view wx:if="{{!idloggin}}">
+       <view class="nav-left"> 性别</view>
+       <text space="ensp" style="color: #666666;">未填写 </text>   
+    </view>
+  <!--已实名认证-->
+  <view wx:else>
+       <view class="nav-left"> 性别</view>
+       <text space="ensp" style="color: #666666;" >{{list.Sex}} </text>   
+    </view>
+    <view class="divLine"></view>
+</view> 
+
+
+<text style="font-size: small; font-weight: 100; color: #333333;margin-left: 7.5%; margin-top: 60rpx;"> 联系方式</text>
+<!--手机-->
+<view class="nav">
+   <!--未实名认证-->
+    <view wx:if="{{!idloggin}}">
+       <view class="nav-left"> 手机</view>
+       <text space="ensp" style="color: #666666;">未填写 </text>   
+    </view>
+  <!--已实名认证-->
+  <view wx:else>
+       <view class="nav-left"> 手机</view>
+       <text space="ensp" style="color: #666666;" >{{list.Telephone}} </text>   
+    </view>
+    <view class="divLine"></view>
+</view>
+
+<!--邮箱-->
+<view class="nav">
+   <!--未实名认证-->
+    <view wx:if="{{!idloggin}}">
+       <view class="nav-left"> 邮箱</view>
+       <text space="ensp" style="color: #666666;">未填写 </text>   
+    </view>
+  <!--已实名认证-->
+  <view wx:else>
+       <view class="nav-left"> 邮箱</view>
+       <text space="ensp" style="color: #666666;" >{{list.Mail}} </text>   
+    </view>
+    <view class="divLine"></view>
+</view>
+
+<text style="font-size: small; font-weight: 100; color: #333333;margin-left: 7.5%; margin-top: 60rpx;"> 个性化</text>
+<!--行业-->
+<view class="nav">
+   <!--未实名认证-->
+    <view wx:if="{{!idloggin}}">
+       <view class="nav-left">行业</view>
+       <text space="ensp" style="color: #666666;">未填写 </text>   
+    </view>
+  <!--已实名认证-->
+  <view wx:else>
+       <view class="nav-left"> 行业</view>
+       <text space="ensp" style="color: #666666;" >{{list.Career}} </text>   
+    </view>
+    <view class="divLine"></view>
+</view>

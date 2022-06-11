@@ -1,0 +1,107 @@
+/* pages/help/helping/helping.wxss */
+.safe{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 30rpx;
+  background-color: white;
+  position: absolute;
+  bottom: 832rpx;
+  left: 50rpx;
+  z-index: 9999;
+}
+.safe-text{
+  width: 490rpx;
+  height: 105rpx;
+  border-radius: 15rpx;
+  background-color: rgb(232, 241, 255);
+  position: absolute;
+  bottom: 824rpx;
+  left: 100rpx;
+  font-size: 31rpx;
+  font-weight: 600;
+  line-height: 110rpx;
+  color:#000066 ;
+  text-align: center;
+}
+.down{
+  width: 710rpx;
+  height: 730rpx;
+  position: fixed;
+  bottom: 78rpx;
+  background-color: white;
+  margin-left: 20rpx;
+}
+.time{
+  position:absolute;
+  top:40rpx;
+  left:40rpx;
+  height: 50rpx;
+  width: 700rpx;
+  line-height: 50rpx;
+}
+
+.Myposition{
+  position:absolute;
+  top:100rpx;
+  left:0rpx;
+  height: 50rpx;
+  width: 700rpx;
+  line-height: 50rpx;
+}
+
+.neederposition{
+  position:absolute;
+  top:160rpx;
+  left:0rpx;
+  height: 50rpx;
+  width: 700rpx;
+  line-height: 50rpx;
+}
+.down-icons{
+  font-size: 25rpx;
+  height: 150rpx;
+  width: 700rpx;
+  position:absolute;
+  top:280rpx;
+}
+.button1{
+  width: 230rpx;
+  height: 90rpx;
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 460rpx;
+  left: 70rpx;
+}
+.button1-line{
+  width: 180rpx;
+  height: 55rpx;
+  background-color: #f6f6f6;
+  padding: 20rpx;
+  margin-left: 5rpx;
+  border: 4rpx solid #8f8e8e;
+  border-radius: 10rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #202020;
+}
+
+.button2{
+  width: 230rpx;
+  height: 90rpx;
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 460rpx;
+  left: 415rpx;
+}
+.button2-line{
+  width: 180rpx;
+  height: 55rpx;
+  background-color: #f6f6f6;
+  margin-left: 5rpx;
+  padding: 20rpx;
+  border: 4rpx solid #8f8e8e;
+  border-radius: 10rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #202020;
+}

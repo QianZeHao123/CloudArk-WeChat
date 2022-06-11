@@ -1,0 +1,8 @@
+<!--pages/person/myAddress/myAddress.wxml-->
+<view class="view-top">
+  <text style="font-size:32rpx; font-weight: 300; color: #333333;margin-top: 12%;margin-left: -30rpx;"> 常用地址填写</text>
+  <image src="/static/images/greenLine.png" style="width: 50rpx;height: 90rpx; margin-top: 92rpx; float: left; margin-left: 4%;"></image>
+  <input  class="inp" placeholder="请输入地址" bindinput="getAddress"  
+  value="{{list.Address}}"> </input>
+</view>
+<view class="goBtn" bindtap="addAddress" data-pagename="commuInfo"  data-gostate="rt">保存</view>

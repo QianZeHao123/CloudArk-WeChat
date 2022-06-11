@@ -1,0 +1,21 @@
+.nav{
+  height:90rpx;
+  padding-top: 50rpx;
+  background-color: white;
+  border-bottom:#f6f6f6 solid 2rpx ;
+  border-top:#f6f6f6 solid 1rpx ;
+}
+.nav text{
+  float: left;
+  font-size: 35rpx;
+   margin-left: 30rpx;
+   line-height: 60rpx;
+   color: #333333;
+}
+.right{
+  font-size: 42rpx;
+  float: right;
+  margin-right: 48rpx;
+  line-height: 60rpx;
+  color: #cecccc;
+}

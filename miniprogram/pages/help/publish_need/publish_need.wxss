@@ -1,0 +1,264 @@
+page{
+  /* background-color: #044E99; */
+}
+.total{
+   width: 710rpx;
+   height: 1450rpx;
+   background-color: white;
+   margin-left: 20rpx;
+   margin-top: 30rpx;
+  border-radius: 4%;
+}
+
+.top{
+  width: 710rpx;
+  height: 150rpx;
+}
+.first{
+  width: 200rpx;
+  color: black;
+  font-size: 37rpx;
+  position:absolute;
+  margin-left: 17%;
+  margin-top: 5%;
+}
+
+.second{
+  width: 200rpx;
+  color: #797979;
+  font-size: 37rpx;
+  position:absolute;
+  margin-left: 60%;
+  margin-top: 5%;
+}
+
+
+
+.position{
+  width: 710rpx;
+  height: 175rpx;
+ 
+}
+.position-use{
+  color:#044E99;
+  font-size: 28rpx;
+  position: absolute;
+  top: 186rpx;
+  left: 500rpx;
+}
+
+.position-choose{
+  width: 615rpx;
+  height: 80rpx;
+  border: #b8b7b7 solid 2rpx;
+  line-height: 80rpx;
+  margin-left:44rpx ;
+  margin-top: 20rpx;
+  border-radius: 2%;
+}
+
+.phone-use{
+  color:#044E99;
+  font-size: 28rpx;
+  position: absolute;
+  top: 370rpx;
+  left: 470rpx;
+}
+
+.help-choose{
+  width: 615rpx;
+  height: 140rpx;
+  border: #b8b7b7 solid 2rpx;
+  margin-left:44rpx ;
+  margin-top: 20rpx;
+  border-radius: 2%;
+}
+
+.down-first{
+  font-size: 29rpx;
+  color: rgb(219, 1, 1);
+  margin-left: 23%;
+  position: relative;
+  top: 500rpx;
+}
+.goBtn{width: 480rpx;line-height: 90rpx;border-radius: 20rpx;font-size: 34rpx;margin: 40rpx auto 0;text-align: center;background-color: #044E99;color: #fff; 
+  margin-left: 110rpx;margin-top: 530rpx; }
+.goBtn:active{ opacity: 0.7; }
+
+.help-next{
+  width: 615rpx;
+  height: 80rpx;
+  border: #b8b7b7 solid 2rpx;
+  border-top:none ;
+  margin-left:44rpx ;
+  border-radius: 2%;
+}
+.textmessage1{
+  width: 80rpx;
+  height: 79.5rpx;
+  margin-top: 0.1rpx;
+  background-color: #e2e1e1;
+}
+.textmessage2{
+  width: 80rpx;
+  height: 79rpx;
+  margin-top: 0.2rpx;
+  background-color:white;
+}
+.videomessage1{
+  width: 90rpx;
+  height: 79rpx;
+  margin-left:90rpx;
+  position: absolute;
+  top:735rpx;
+}
+.videomessage2{
+  width: 85rpx;
+  height: 80rpx;
+  margin-left:83rpx;
+  position: absolute;
+  top:737.4rpx;
+  background-color: #e2e1e1;
+}
+.textinput{
+  width: 350rpx;
+  height: 50rpx;
+  background-color: rgba(230, 230, 230, 0.822);
+  border-radius: 20rpx;
+  position:absolute;
+  top: 800rpx;
+  left: 250rpx;
+}
+
+.kuaijie-first{
+  width: 650rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color:#6d6d6d;
+  border-radius: 20rpx;
+  position:absolute;
+  top:890rpx;
+  margin-left: 30rpx;
+}
+
+.kuaijie-first-text{
+  width: 140rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color:#6d6d6d;
+  border-radius: 20rpx;
+  background-color: #eeeded;
+  text-align: center;
+   float: left;
+   margin-left: 20rpx;
+}
+.kuaijie-second{
+  width: 650rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color:#6d6d6d;
+  border-radius: 20rpx;
+  position:absolute;
+  top:965rpx;
+  margin-left: 30rpx;
+}
+
+.kuaijie-second-text{
+  width: 110rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color:#6d6d6d;
+  border-radius: 20rpx;
+  background-color: #eeeded;
+  text-align: center;
+   float: left;
+   margin-left: 20rpx;
+}
+
+.kuaijie-third{
+  width: 650rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color:#6d6d6d;
+  border-radius: 20rpx;
+  position:absolute;
+  top:1045rpx;
+  margin-left: 30rpx;
+}
+
+
+
+.kuaijie-fourth{
+  width: 650rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color:#6d6d6d;
+  border-radius: 20rpx;
+  position:absolute;
+  top:1120rpx;
+  margin-left: 30rpx;
+}
+
+.myLuYin{
+  height: 25rpx;
+  background:#e2e2e2  ;
+  border-radius:6rpx;
+  margin: 5rpx ; 
+  text-align: center;
+  line-height: 25rpx;
+  font-size: 25rpx;
+  color:#333333;
+  width: 50rpx;
+}
+.bt{
+  background:#e2e2e2;
+  color:#333333;
+  width: 50rpx;
+  position:relative;
+  bottom: 175rpx;
+  left: 8%;
+  z-index: 59;
+  height: 78rpx;
+}
+ 
+.btTouch{
+  background: greenyellow;
+  color:  #fff;
+   width: 100rpx;
+   position:relative;
+   bottom: 175rpx;
+   left: 8%;
+  z-index: 69;
+  height: 78rpx;
+}
+
+.audio{
+  font-size: 30rpx;
+  position: relative;
+  top:-60rpx ;
+  left: 100rpx;
+}
+
+.img1{
+  height: 120rpx;
+  width: 90rpx;
+  margin-top: 30rpx;
+  margin-left: 60rpx;
+}
+.img2{
+  height: 120rpx;
+  width: 90rpx;
+  margin-top: 30rpx;
+  margin-left: 60rpx;
+}
+.img3{
+  height: 110rpx;
+  width: 105rpx;
+  margin-top: 30rpx;
+}

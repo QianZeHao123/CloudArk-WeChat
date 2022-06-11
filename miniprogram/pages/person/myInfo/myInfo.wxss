@@ -1,0 +1,51 @@
+/* pages/myInfo/myInfo.wxss */
+.title{
+  width: 400rpx;
+  height: 100rpx;
+  color: black;
+  font-size:47rpx;
+  font-weight: 500;
+  margin-top: 45rpx;
+  margin-left: 60rpx;
+  float: left;
+}
+
+.photo{
+  /* overflow: hidden; */
+  width: 140rpx;
+  height: 140rpx;
+ margin-top: -120rpx;
+ margin-left: 72%;
+  border-radius: 50%;
+  
+}
+
+.nav{
+  height:100rpx;
+  padding-top: 6rpx;
+  
+ 
+}
+
+.nav-left{
+  float: left;
+  font-size: 32rpx;
+  margin-left: 60rpx;
+  line-height: 100rpx;
+  color:#333333 ;
+ 
+}
+.nav text{
+  padding-right: 60rpx;
+  float: right;
+  font-size: 32rpx;
+   line-height: 100rpx;
+   color: #818181;
+}
+.divLine{
+  background: #dbdbdb;
+  width:88%;
+  height: 1rpx;
+  margin-left: 6%;
+  margin-top: 12%;
+}

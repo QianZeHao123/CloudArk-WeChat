@@ -1,0 +1,30 @@
+{
+  "setting": {
+    "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "实名认证",
+          "pathName": "pages/person/myRecongnition/myRecongnition",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "获取微信授权",
+          "pathName": "pages/person/personal/personal",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "projectname": "%E4%BA%91%E7%AB%AF%E6%96%B9%E8%88%9F1",
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html"
+}

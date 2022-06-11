@@ -1,0 +1,74 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/help/needinging/needinging",
+    "pages/help/helping/helping",
+    "pages/help/need_wait/need_wait",
+    "pages/help/publish_need/publish_need",
+    "pages/help/publish_offer/publish_offer",
+    "pages/person/myRecongnition/myRecongnition",
+    "pages/person/record/record",
+    "pages/person/myInfo/myInfo",
+    "pages/person/identifi/identifi",
+    "pages/person/myInfoControl/myInfoControl",
+    "pages/person/personal/personal",
+    "pages/search/search",
+    "pages/Datashare/Datashare",
+    "pages/utils/utils",
+    "pages/expershare/expershare",
+    "pages/person/myAddress/myAddress",
+    "pages/person/communi/communi",
+    "pages/help/help_wait/help_wait"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+   "enablePullDownRefresh":true,
+    "navigationBarBackgroundColor": "#044E99",
+    "navigationBarTitleText": "云端方舟 ",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "互助救援",
+        "iconPath": "/static/images/紧急blue.png",
+        "selectedIconPath": "/static/images/紧急red.png"
+      },
+      {
+        "pagePath":  "pages/Datashare/Datashare",
+        "text": "数据共享",
+        "iconPath": "/static/images/紧急blue.png",
+        "selectedIconPath": "/static/images/紧急red.png"
+      },
+      {
+        "pagePath":  "pages/utils/utils",
+        "text": "应急配套",
+        "iconPath": "/static/images/紧急blue.png",
+        "selectedIconPath": "/static/images/紧急red.png"
+      },
+      {
+        "pagePath":  "pages/expershare/expershare",
+        "text": "经验分享",
+        "iconPath": "/static/images/紧急blue.png",
+        "selectedIconPath": "/static/images/紧急red.png"
+      },
+      {
+        "pagePath":  "pages/person/personal/personal",
+        "text": "个人中心",
+        "iconPath": "/static/images/紧急blue.png",
+        "selectedIconPath": "/static/images/紧急red.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  }
+}
