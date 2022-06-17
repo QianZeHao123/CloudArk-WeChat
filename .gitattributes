@@ -1,0 +1,6 @@
+# Auto detect text files and perform LF normalization
+*.js linguist-language=JavaScript
+*.css linguist-language=css
+*.wxss linguist-language=wxss
+*.wxml linguist-language=wxml
+*.json linguist-language=json
