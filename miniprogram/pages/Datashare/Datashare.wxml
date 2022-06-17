@@ -4,27 +4,25 @@
 <!-- 引入样式文件 -->
 <!-- 引入 Vue 和 Vant 的 JS 文件 -->
 
-<van-search
-  value="{{ value }}"
-  shape="round"
-  background="#4fc08d"
-  placeholder="全国灾情搜索"
-/>
+<van-search value="{{ value }}" shape="round" background="#4fc08d" placeholder="全国灾情搜索" />
 
 <van-sidebar active-key="{{ activeKey }}">
   <van-sidebar-item title="北京" />
   <van-sidebar-item title="天津" />
-  <van-sidebar-item title="河南" />
-  <van-sidebar-item title="山东" />
-  <van-sidebar-item title="陕西" />
-  <van-sidebar-item title="山西" />
   <van-sidebar-item title="上海" />
-  <van-sidebar-item title="西藏" />
-  <van-sidebar-item title="四川" />
   <van-sidebar-item title="重庆" />
-  <van-sidebar-item title="新疆" />
-  <van-sidebar-item title="宁夏" />
-  <van-sidebar-item title="黑龙江" />
-  <van-sidebar-item title="吉林" />
-  <van-sidebar-item title="辽宁" />
+  <van-sidebar-item title="河南" />
 </van-sidebar>
+<!-- <view class="side">
+  <van-sidebar active-key="{{ activeKey }}" bind:change="onChange">
+    <van-sidebar-item title="北京" />
+    <van-sidebar-item title="天津" />
+    <van-sidebar-item title="上海" />
+    <van-sidebar-item title="重庆" />
+    <van-sidebar-item title="河南" />
+  </van-sidebar>
+  <van-notify id="van-notify" />
+</view>
+<view class="box_1" wx:if="{{activeKey == 0}}">
+</view>
+<view class="box_1" wx:elif="{{activeKey == 1}}">22</view> -->

@@ -37,6 +37,24 @@
         "selectedIconPath": "/static/images/互助救援.png"
       },
       {
+        "pagePath": "pages/Datashare/Datashare",
+        "text": "数据共享",
+        "iconPath": "/static/images/数据共享.png",
+        "selectedIconPath": "/static/images/数据共享.png"
+      },
+      {
+        "pagePath": "pages/utils/utils",
+        "text": "应急配套",
+        "iconPath": "/static/images/应急配套.png",
+        "selectedIconPath": "/static/images/应急配套.png"
+      },
+      {
+        "pagePath": "pages/expershare/expershare",
+        "text": "经验分享",
+        "iconPath": "/static/images/经验分享.png",
+        "selectedIconPath": "/static/images/经验分享.png"
+      },
+      {
         "pagePath": "pages/person/personal/personal",
         "text": "个人中心",
         "iconPath": "/static/images/个人中心.png",
