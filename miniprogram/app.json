@@ -1,6 +1,6 @@
 {
   "pages": [
-    
+
     "pages/index/index",
     "pages/help/needinging/needinging",
     "pages/help/helping/helping",
@@ -24,51 +24,58 @@
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "dark",
-   "enablePullDownRefresh":true,
+    "enablePullDownRefresh": true,
     "navigationBarBackgroundColor": "#044E99",
     "navigationBarTitleText": "云端方舟 ",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
         "text": "互助救援",
-        "iconPath": "/static/images/紧急blue.png",
-        "selectedIconPath": "/static/images/紧急red.png"
+        "iconPath": "/static/images/互助救援.png",
+        "selectedIconPath": "/static/images/互助救援.png"
       },
       {
-        "pagePath":  "pages/Datashare/Datashare",
+        "pagePath": "pages/Datashare/Datashare",
         "text": "数据共享",
-        "iconPath": "/static/images/紧急blue.png",
-        "selectedIconPath": "/static/images/紧急red.png"
+        "iconPath": "/static/images/数据共享.png",
+        "selectedIconPath": "/static/images/数据共享.png"
       },
       {
-        "pagePath":  "pages/utils/utils",
+        "pagePath": "pages/utils/utils",
         "text": "应急配套",
-        "iconPath": "/static/images/紧急blue.png",
-        "selectedIconPath": "/static/images/紧急red.png"
+        "iconPath": "/static/images/应急配套.png",
+        "selectedIconPath": "/static/images/应急配套.png"
       },
       {
-        "pagePath":  "pages/expershare/expershare",
+        "pagePath": "pages/expershare/expershare",
         "text": "经验分享",
-        "iconPath": "/static/images/紧急blue.png",
-        "selectedIconPath": "/static/images/紧急red.png"
+        "iconPath": "/static/images/经验分享.png",
+        "selectedIconPath": "/static/images/经验分享.png"
       },
       {
-        "pagePath":  "pages/person/personal/personal",
+        "pagePath": "pages/person/personal/personal",
         "text": "个人中心",
-        "iconPath": "/static/images/紧急blue.png",
-        "selectedIconPath": "/static/images/紧急red.png"
+        "iconPath": "/static/images/个人中心.png",
+        "selectedIconPath": "/static/images/个人中心.png"
       }
     ]
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2",
+
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-sidebar": "@vant/weapp/sidebar/index",
+    "van-sidebar-item": "@vant/weapp/sidebar-item/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-search": "@vant/weapp/search/index"
+  },
+
   "lazyCodeLoading": "requiredComponents",
   "permission": {
     "scope.userLocation": {
-      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }
   }
 }
