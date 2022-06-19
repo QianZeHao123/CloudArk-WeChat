@@ -37,6 +37,24 @@
         "selectedIconPath": "/static/images/互助救援.png"
       },
       {
+        "pagePath": "pages/Datashare/Datashare",
+        "text": "数据共享",
+        "iconPath": "/static/images/数据共享.png",
+        "selectedIconPath": "/static/images/数据共享.png"
+      },
+      {
+        "pagePath": "pages/utils/utils",
+        "text": "应急配套",
+        "iconPath": "/static/images/应急配套.png",
+        "selectedIconPath": "/static/images/应急配套.png"
+      },
+      {
+        "pagePath": "pages/expershare/expershare",
+        "text": "经验分享",
+        "iconPath": "/static/images/经验分享.png",
+        "selectedIconPath": "/static/images/经验分享.png"
+      },
+      {
         "pagePath": "pages/person/personal/personal",
         "text": "个人中心",
         "iconPath": "/static/images/个人中心.png",
@@ -52,7 +70,10 @@
     "van-sidebar-item": "@vant/weapp/sidebar-item/index",
     "van-icon": "@vant/weapp/icon/index",
     "van-search": "@vant/weapp/search/index",
-    "van-card": "@vant/weapp/card/index"
+    "van-card": "@vant/weapp/card/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index"
   },
 
   "lazyCodeLoading": "requiredComponents",

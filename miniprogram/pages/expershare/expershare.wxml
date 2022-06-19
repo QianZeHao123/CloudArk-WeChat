@@ -1,2 +1,21 @@
 <!--pages/expershare/expershare.wxml-->
-<text>pages/expershare/expershare.wxml</text>
+<!-- <text>pages/expershare/expershare.wxml</text> -->
+<van-cell-group inset>
+  <van-card desc="今天z市的雨也下得太大了吧!!又要开启“看海模式”了。今天公司提前下班，雨下的贼大，路上都没啥打伞蹚水的行人。趁着等红绿灯的空档，我打开“云端方舟”，想着或许附近有没有需要帮助的人。正巧，一点开“提供帮助”，就发现附近一个地铁站，站外的积水已经半人高，一位妈妈带着四岁的宝宝，蹚水也不是往回走也不是。我赶紧掉头，在平台上接单后锁定母子俩的位置，成功找到他俩，将母子俩安全送回了家。真是有惊无险!!" title="#暴雨互助#">
+    <view slot="footer">
+      <van-button size="small"><van-icon name="comment-o" />评论</van-button>
+      <van-button size="small"><van-icon name="like-o" />点赞</van-button>
+      <van-button size="small"><van-icon name="share-o" />分享</van-button>
+    </view>
+  </van-card>
+</van-cell-group>
+
+<van-cell-group inset>
+  <van-card desc="又又又又又下大雨了!!大家一定尽量待在家里，注意人身安全。作为一名社区工作人员，秉承为人民服务的理念，我必须时时刻刻注意社区居民的动态以免在极端天气发生意外。前阵子，社区居民都用上了“云端方舟”，这不，刚一点开就能看到社区居民们的动态，我们也没有想到，社区居民们的动态就是这样的。" title="#暴雨互助#">
+    <view slot="footer">
+      <van-button size="small"><van-icon name="comment-o" />评论</van-button>
+      <van-button size="small"><van-icon name="like-o" />点赞</van-button>
+      <van-button size="small"><van-icon name="share-o" />分享</van-button>
+    </view>
+  </van-card>
+</van-cell-group>

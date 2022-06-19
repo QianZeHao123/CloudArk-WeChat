@@ -1,2 +1,13 @@
 <!--pages/utils/utils.wxml-->
-<text>pages/utils/utils.wxml</text>
+<van-notice-bar left-icon="volume-o" text="为了您和您家人的安全，请选购您的专属应急包。" />
+<!-- 文字较短时，通过设置 scrollable 属性开启滚动播放 -->
+<van-notice-bar scrollable text="这里面可以轮播一些应急包优惠信息" />
+<view class='national-disaster-information'>
+  <van-sidebar active-key="{{ activeKey }}">
+    <van-sidebar-item title="医疗用品" />
+    <van-sidebar-item title="生活用品" />
+    <van-sidebar-item title="应急设备" />
+    <van-sidebar-item title="救灾工具" />
+    <!-- <van-sidebar-item title="河南" /> -->
+  </van-sidebar>
+</view>
