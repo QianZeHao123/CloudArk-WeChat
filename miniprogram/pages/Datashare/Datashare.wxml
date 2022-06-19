@@ -7,10 +7,10 @@
 <van-search value="{{ value }}" shape="round" background="#4fc08d" placeholder="全国灾情搜索" />
 <view class='national-disaster-information'>
   <van-sidebar active-key="{{ activeKey }}">
-    <van-sidebar-item title="北京" />
-    <van-sidebar-item title="天津" />
-    <van-sidebar-item title="上海" />
-    <van-sidebar-item title="重庆" />
-    <van-sidebar-item title="河南" />
+      <van-sidebar-item title="北京" />
+      <van-sidebar-item title="天津" />
+      <van-sidebar-item title="上海" />
+      <van-sidebar-item title="重庆" />
+      <van-sidebar-item title="河南" />
   </van-sidebar>
 </view>
